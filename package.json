@@ -1,0 +1,19 @@
+{
+  "name": "etherlime-react-shape",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "etherlime compile --buildDirectory='./web/src/contracts' && cd web && react-scripts start",
+    "build": "cd web react-scripts build",
+    "test": "cd web react-scripts test",
+    "eject": "cd web react-scripts eject"
+  },
+  "dependencies": {
+    "etherlime": "^0.10.7",
+    "ethers": "4.0.24",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-scripts": "2.1.4",
+    "web3": "^1.0.0-beta.37"
+  }
+}

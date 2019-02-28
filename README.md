@@ -28,7 +28,7 @@ The contract has been compiled within the deployment. But if you need to do it s
 
  Please note: Due to the restrictions of the React framework, a compilation of contract is made during running the project with `yarn start` command and this contract is placed withing `src` folder.
 
-When your deployment is finished successfully copy the address of the contract that is shown as a Result in the report table and assign its value to `contractAddress` variable declared in `web/src/app/app.component.ts` file. Now we are ready to run the dApp.
+When your deployment is finished successfully copy the address of the contract that is shown as a Result in the report table and assign its value to `contractAddress` variable declared in `web/src/app/App.js` file. Now we are ready to run the dApp.
 
 ```
     yarn start

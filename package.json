@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "etherlime compile --buildDirectory='./web/src/contracts' && cd web && react-scripts start",
+    "start": "etherlime compile --buildDirectory=./web/src/contracts && cd web && react-scripts start",
     "build": "cd web react-scripts build",
     "test": "cd web react-scripts test",
     "eject": "cd web react-scripts eject"

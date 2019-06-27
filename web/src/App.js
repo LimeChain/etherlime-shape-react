@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { ethers } from 'ethers';
-import etherlime from 'etherlime';
+import { ContractAt } from 'etherlime-lib'
 const ToDo = require('./contracts/ToDoManager.json');
 const web3 = window.web3;
 
@@ -20,8 +20,8 @@ class App extends Component {
       const signer = await provider.getSigner();
 
       // Please deploy the contract and put your contract address here: 
-      const contractAddress = '';
-      const contractInstance = await etherlime.ContractAt(ToDo, contractAddress, signer, provider);
+      const contractAddress = '0xc9707e1e496c12f1fa83afbba8735da697cdbf64';
+      const contractInstance = await ContractAt(ToDo, contractAddress, signer, provider);
       const successMessage = 'The contract has been set and is ready to interact with it!';
       this.setState({ provider, signer, contractInstance: contractInstance, successMessage, title });
       this.setState({ toDos: await this.getToDoStatuses() });

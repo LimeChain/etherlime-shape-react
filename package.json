@@ -9,7 +9,7 @@
     "eject": "cd web react-scripts eject"
   },
   "dependencies": {
-    "etherlime": "^1.0.0",
+    "etherlime-lib": "^1.0.0",
     "ethers": "4.0.24",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
